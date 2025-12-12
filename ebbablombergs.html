@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERO MODA Hovedopgave</title>
+
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner"><p>Altid fri levering ved køb over 499 kr. 🚚</p></div>
+        <div class="main-header">
+            <div class="main-header-left">
+                <a href="#" id="vm-knap">VERO MODA</a>
+                <a href="#" id="ts-knap">TOPSHOP</a>
+            </div>
+            <div class="main-header-right">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Søg">
+                    </div>
+                    <button id="searching"><img src="images/search.svg" alt="search icon"></button>
+                </div>
+                
+                <div class="icon-container">
+                    <img class="icons" src="images/location.svg" alt="location-icon">
+                    <img class="icons" src="images/profile.svg" alt="profile-icon">
+                    <img class="icons" src="images/kurv.svg" alt="kurv-icon">
+                </div>
+            </div>
+        </div>
+        <div class="logo-container">
+            <a href="index.html"> <img id="logo" src="images/VERO-MODA.webp" alt="VERO MODA logo"></a>
+        </div>
+        <nav class="top-categories"> 
+            <ul class="nav-menu">
+                <li><a href="#">Nyheder</a></li>
+        
+                <!-- TØJ med mega-menu -->
+                <li class="has-mega">
+                    <a href="#" class="nav-link">Tøj</a>
+        
+                    <div class="mega-menu">
+                        <div class="mega-inner">
+        
+                            <!-- Kolonne 1 -->
+                            <div class="mega-column">
+                                <ul>
+                                    <li><a href="#">Se Alle</a></li>
+                                    <li><a href="#">Nyheder🔥</a></li>
+                                    <li><a href="#">Strik</a></li>
+                                    <li><a href="#">Jakker🍂</a></li>
+                                    <li><a href="#">Kjoler</a></li>
+                                    <li><a href="#">Jeans 💙</a></li>
+                                    <li><a href="#">Bukser & Leggings</a></li>
+                                    <li><a href="#">Toppe</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Kolonne 2 -->
+                            <div class="mega-column">
+                                <ul>
+                                    <li><a href="#">Blazer</a></li>
+                                    <li><a href="#">Skjorter</a></li>
+                                    <li><a href="#">Nederdele</a></li>
+                                    <li><a href="#">Festtøj💃</a></li>
+                                    <li><a href="#">Sæt</a></li>
+                                    <li><a href="#">Veste</a></li>
+                                    <li><a href="#">Sweatshirts</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Kolonne 3 -->
+                            <div class="mega-column">
+                                <ul>
+                                    <li><a href="#">Basics</a></li>
+                                    <li><a href="#">Shorts</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Gavekort</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Kolonne 4: Trends & Edits -->
+                            <div class="mega-column">
+                                <h4>TRENDS</h4>
+                                <ul>
+                                    <li><a href="#">Viral🤳</a></li>
+                                    <li><a href="#">Gaveshoppen</a></li>
+                                    <li><a href="#">Brown Hues</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Burgundy</a></li>
+                                    <li><a href="#">Fløjl🤎</a></li>
+                                    <li><a href="#">Tid Til Blonder</a></li>
+                                    <li><a href="#">All That Glitters✨</a></li>
+                                    <li><a href="index.html">Influencer Styles</a></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+                </li>
+        
+                <!-- Resten af menuen -->
+                <li><a href="#">Populært</a></li>
+                <li><a href="#">Gode Tilbud</a></li>
+                <li><a href="#">Str.: 44-54</a></li>
+                <li><a href="#">TOPSHOP</a></li>
+                <li><a href="#">AWARE</a></li>
+                <li><a href="#">GIRL</a></li>
+                <li><a href="#">Ventetøj</a></li>
+                <li><a href="#">VERO MODA Club</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="influencer-topbar">
+            <div class="breadcrumb-container">
+                <ul>
+                    <li><a href="index.html"><img src="images/arrow.svg" alt="tilbage-pil"></a></li>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li class="breadcrumb-item">/</li>
+                    <li><a href="#">Trending now</a></li>
+                    <li class="breadcrumb-item">/</li> 
+                    <li><a href="index.html">Influencer Styles</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="influencer-detail">
+            <div class="detail-container">
+    
+                <!-- VENSTRE SIDE: gallery + video + tekst -->
+                <div class="detail-left">
+    
+                    <!-- Gallery-kolonne -->
+                    <div class="detail-gallery">
+                        <!-- <button class="gallery-arrow up"><img src="images/arrow.svg" alt="pil"></button> -->
+    
+                        <button class="gallery-item is-active">
+                            <video src="videos/@ebbablombergs.mp4"muted playsinline alt="Look 1"></video>
+                            <span class="gallery-play"><img src="images/Video_duotone_line.svg" alt="video icon"></span>
+                        </button>
+    
+                        <button class="gallery-item">
+                            <img src="images/styles/@ebbablombergs-styles/@ebbablombergs_01.webp" alt="Look 2">
+                        </button>
+    
+                        <button class="gallery-item">
+                            <img src="images/styles/@ebbablombergs-styles/@ebbablombergs_02.webp" alt="Look 3">
+                        </button>
+    
+                        <!-- <button class="gallery-arrow down"><img src="images/arrow.svg" alt="pil"></button> -->
+                    </div>
+    
+                    <!-- Stort område -->
+                    <div class="detail-media">
+                        <video src="videos/@ebbablombergs.mp4" controls playsinline alt="@ebbablombergs influencer look"></video>
+    
+                        <p class="detail-caption">
+                            Elegant enkelhed i fokus. @hennaholmroos viser, hvordan neutrale toner og
+                            tailored silhuetter skaber et look, der føles både afslappet og sofistikeret.
+                            Style VMMERLE skjorten med VMKYLAN tailored bukser og tilføj din yndlingscoat
+                            for et perfekt city-moment.
+                        </p>
+    
+                        <ul class="detail-usps">
+                            <li><img src="images/levering.svg" alt="levering icon">Få gratis levering på ordrer over 499 KR</li>
+                            <li><img src="images/timer.svg" alt="timer icon">Hurtig levering tilgængelig</li>
+                            <li><img src="images/Refund.svg" alt="refund icon">100-dages online returret</li>
+                            <li><img src="images/Klarna.svg" alt="klarna icon">Prøv før du køber med Klarna</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- HØJRE SIDE: handle, CTA + produkter -->
+                <div class="detail-right">
+    
+                    <!-- Top: handle + CTA -->
+                    <div class="detail-right-top">
+                        <h1 class="detail-handle">@ebbablombergs</h1>
+                        <button class="btn-add-all">TILFØJ ALLE TIL KURVEN</button>
+                    </div>
+    
+                    <!-- Produkt-slider/område -->
+                    <div class="detail-products">
+    
+                        <!-- Produkt 1 -->
+                        <article class="detail-product-card">
+                            <div class="product-image" data-product-gallery>
+                                <!-- Billede 1 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-1.webp"
+                                     alt="VMGLORIA jakke 1"
+                                     class="product-photo is-active">
+                          
+                                <!-- Billede 2 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-2.webp"
+                                     alt="VMGLORIA jakke 2"
+                                     class="product-photo">
+                          
+                                <!-- Billede 3 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-pack.webp"
+                                     alt="VMGLORIA jakke pack"
+                                     class="product-photo">
+                                
+                                <!-- Billede 4 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-3.webp"
+                                     alt="VMGLORIA jakke 3"
+                                     class="product-photo">
+                                
+                                <!-- Billede 5 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-4.webp"
+                                     alt="VMGLORIA jakke 4"
+                                     class="product-photo">
+                                
+                                <!-- Billede 6 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-5.webp"
+                                alt="VMGLORIA jakke 5"
+                                class="product-photo">
+
+                                <!-- Små cirkler/dots -->
+                                <div class="product-dots">
+                                    <button class="product-dot is-active" data-index="0"></button>
+                                    <button class="product-dot" data-index="1"></button>
+                                    <button class="product-dot" data-index="2"></button>
+                                    <button class="product-dot" data-index="3"></button>
+                                    <button class="product-dot" data-index="4"></button>
+                                    <button class="product-dot" data-index="5"></button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-info">
+                                <h2 class="product-name">VMGLORIA</h2>
+                                <p class="product-price">229,95 KR</p>
+                                <p class="product-color">Grå / Oatmeal</p>
+
+                                <!-- små billeder af andre farver (kun visning, ingen klikfunktion) -->
+                                <div class="variant-row simple-variants">
+                                    <div class="variant-thumb">
+                                        <img src="images/styles/@ebbablombergs-styles/vmgloria-oatmeal-pack.webp" alt="VMGLORIA - grå">
+                                    </div>
+                                    <div class="variant-thumb">
+                                        <img src="images/styles/@ebbablombergs-styles/vmgloria-brun-pack.webp" alt="VMGLORIA - brun">
+                                    </div>
+                                </div>
+    
+                                <div class="product-sizes">
+                                    <div class="product-sizes guide">
+                                        <p>Vælg størrelse</p>
+                                        <button class="size-guide">Størrrelsesguide</button>
+                                    </div>
+                                    <div class="size-options">
+                                        <button>XS</button>
+                                        <button>S</button>
+                                        <button>M</button>
+                                        <button>L</button>
+                                        <button>XL</button>
+                                    </div>
+                                </div>
+    
+                                <button class="btn-add-cart">LÆG I KURVEN</button>
+                                <a href="#" class="product-more">Flere detaljer</a>
+                            </div>
+                        </article>
+    
+                        <!-- Produkt 2 -->
+                        <article class="detail-product-card">
+                            <div class="product-image" data-product-gallery>
+                                <!-- Billede 1 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-1.webp"
+                                     alt="VMTESSA coated bukser 1"
+                                     class="product-photo is-active">
+                          
+                                <!-- Billede 2 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-2.webp"
+                                     alt="VMTESSA coated bukser 2"
+                                     class="product-photo">
+                          
+                                <!-- Billede 3 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-pack.webp"
+                                     alt="VMTESSA coated bukser pack"
+                                     class="product-photo">
+                                
+                                <!-- Billede 4 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-pack-back.webp"
+                                     alt="VMTESSA coated bukser pack back"
+                                     class="product-photo">
+                                
+                                <!-- Billede 5 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-3.webp"
+                                     alt="VMTESSA coated bukser 3"
+                                     class="product-photo">
+                                
+                                <!-- Billede 6 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-4.webp"
+                                     alt="VMTESSA coated bukser 4"
+                                     class="product-photo">
+
+                                <!-- Billede 7 -->
+                                <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-5.webp"
+                                     alt="VMTESSA coated bukser 5"
+                                     class="product-photo">
+
+                                <!-- Små cirkler/dots -->
+                                <div class="product-dots">
+                                    <button class="product-dot is-active" data-index="0"></button>
+                                    <button class="product-dot" data-index="1"></button>
+                                    <button class="product-dot" data-index="2"></button>
+                                    <button class="product-dot" data-index="3"></button>
+                                    <button class="product-dot" data-index="4"></button>
+                                    <button class="product-dot" data-index="5"></button>
+                                    <button class="product-dot" data-index="6"></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-name">VMTESSA HØJ TALJET COATED BUKSER</h2>
+                                <p class="product-price">449,95 KR</p>
+                                <p class="product-color">Sort / Black</p>
+
+                                <!-- små billeder af andre farver (kun visning, ingen klikfunktion) -->
+                                <div class="variant-row simple-variants">
+                                    <div class="variant-thumb">
+                                        <img src="images/styles/@ebbablombergs-styles/vmtessa-coatedpant-pack.webp" alt="VMGLORIA - grå">
+                                    </div>
+                                </div>
+    
+                                <div class="product-sizes">
+                                    <div class="product-sizes guide">
+                                        <p>Vælg størrelse</p>
+                                        <button class="size-guide">Størrrelsesguide</button>
+                                    </div>
+                                    <div class="size-options">
+                                        <button>XS</button>
+                                        <button>S</button>
+                                        <button>M</button>
+                                        <button>L</button>
+                                        <button>XL</button>
+                                    </div>
+                                </div>
+    
+                                <div class="product-length">
+                                    <p>Vælg længde</p>
+                                    <div class="length-options">
+                                        <button>30</button>
+                                        <button>32</button>
+                                        <button>34</button>
+                                    </div>
+                                </div>
+    
+                                <button class="btn-add-cart">LÆG I KURVEN</button>
+                                <a href="#" class="product-more">Flere detaljer</a>
+                            </div>
+                        </article>
+    
+                    </div>
+
+                    <!-- PRODUKT POPUP -->
+                    <div class="product-popup-overlay" id="product-popup">
+                        <div class="product-popup">
+                            <button class="popup-close">&times;</button>
+
+                            <h2>Produktinformation</h2>
+                            <p>
+                                Overtøj kan nemt være både praktisk og smukt designet på samme tid. Med denne jakke kan du løfte dit look på ingen tid. Det elegante design skaber et tidløst look, der passer til alt. Føj en elegant kjole og et par højhælede til jakken for at få et flot look til en særlig lejlighed.
+                            </p>
+                            <ul>
+                                <li>Produkttype: Syntetisk pelsjakke </li>
+                                <li>Hals: Spredt krave</li>
+                                <li>Ærme: Lange ærmer</li>
+                                <li>Lukning: Krog og øjelukning </li>
+                                <li>Lommer: Sidelommer</li>
+                                <li>For: For i polyester for en behagelig følelse</li>
+                            </ul>
+                            <p>Produktnummer: 10333912</p>
+                            <p>Hovedmaterialet i dette produkt indeholder minimum 50% genanvendt polyester.</p>
+
+                            <h2>Vaskeanvisning</h2>
+                            <ul>
+                                <li>MAKS. TEMPERATUR FOR HÅNDVASK 40 C</li>
+                                <li>Må ikke bleges</li>
+                                <li>Må ikke stryges</li>
+                                <li>Må ikke tørretumbles</li>
+                                <li>Må ikke renses</li>
+                                <li>Knap og lyn tøjet, og vask det på vrangen</li>
+                                <li>Mørke farver skal vaskes separat</li>
+                                <li>Må ikke vrides</li>
+                            </ul>
+
+                            <h2>Materialesammensætning</h2>
+                            <ul>   
+                                <li>50% Polyester</li>
+                                <li>50% Genanvendt Polyester</li>
+                            </ul>
+
+                            <h2>Levering og returnering</h2>
+                            <p><strong>LEVERING</strong></p>
+                            <p>Du kan vælge at få din pakke leveret til dit hjem eller arbejde med PostNords klimakompenserede levering. Standardlevering koster 39 kr, men er gratis for ordrer over 499 kr, hvis du vælger at afhente via en pakkeshop - du skal blot vælge et PostNord- eller GLS-servicested. Du finder en oversigt over alle vores leveringsmuligheder og -gebyrer i sektionen "Hjælp" nedenfor.</p>
+                            <p><strong>RETURNERING</strong></p>
+                            <p>Bemærk venligst, at du vil blive opkrævet et returneringsgebyr på 29,95, som vil blive trukket fra din refusion. Vi vedlægger ikke længere et returlabel i din pakke, da vi er blevet papirløse. Alle returneringer foregår online, hvor du nemt selv kan oprette en returlabel ved at registrere din returnering på Returportalen. Du finder vores returpolitik under sektionen "Hjælp" nedenfor.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
