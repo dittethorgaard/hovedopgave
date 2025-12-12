@@ -5,6 +5,7 @@
 body {
     font-family: "Lato", sans-serif;
     margin: 0; /* så siden flugter med kanten */
+    overflow-x: hidden;   /* 🚫 ingen vandret scroll på hele siden */
 }
 
 main {
@@ -608,18 +609,25 @@ button {
 /* Stort område */
 
 .detail-media {
-    flex: 1;
+    flex: 0 0 529px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 529px;
 }
 
-.detail-media video, .detail-media img {
+.detail-media video {
     width: 100%;
-    height: 705px;             /* Giver cropping */
+    height: 625px;
     object-fit: cover;
-    object-position: center;   /* <-- betyder: vis centeret af videoen */
+    object-position: center;
+}
+
+.detail-media img {
+    width: 100%;
+    height: 625px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Tekst under video */
@@ -655,7 +663,9 @@ button {
 .detail-right {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    flex: 1;
+    min-width: 0; /* Grunden til at scroller virker */
 }
 
 .detail-right-top {
@@ -683,18 +693,36 @@ button {
 
 /* Produkter */
 
+.detail-products-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 6px 0; /* giver scrollbaren luft */
+    scrollbar-width: thin;
+}
+
+.detail-products-scroller::-webkit-scrollbar {
+    height: 8px; /* scroll-højde */
+}
+
+.detail-products-scroller::-webkit-scrollbar-thumb {
+    background: #999;
+}
+
+.detail-products-scroller::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
 .detail-products {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
     gap: 20px;
+    min-width: max-content; /* Gør rækken bred nok til scroll */
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
 }
 
 .detail-product-card {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 325px;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 /* Produkt-billed-galleri i influencer-detalje */
@@ -761,6 +789,7 @@ button {
 /* række med farvebilleder under hovedbilledet */
 .variant-row.simple-variants {
     display: flex;
+    flex-wrap: wrap;   /* bryd på flere linjer */
     gap: 6px;
     margin-top: 4px;
 }
@@ -774,7 +803,7 @@ button {
 
 .variant-row.simple-variants .variant-thumb img {
     display: block;
-    width: 50px;      /* justér til den størrelse du vil have */
+    width: 50px;
     height: auto;
 }
 
