@@ -526,6 +526,7 @@ button {
 
 .detail-container {
     display: flex;
+    width: 100%;
     gap: 20px;
     margin: 0;
     padding: 15px 0;
@@ -611,12 +612,12 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 509px;
+    max-width: 529px;
 }
 
-.detail-media video {
+.detail-media video, .detail-media img {
     width: 100%;
-    height: 625px;             /* Giver cropping */
+    height: 705px;             /* Giver cropping */
     object-fit: cover;
     object-position: center;   /* <-- betyder: vis centeret af videoen */
 }
@@ -745,7 +746,7 @@ button {
 .product-name {
     font-size: 16px;
     margin: 4.5px 0;
-
+    text-transform: uppercase;
 }
 
 .product-price {
