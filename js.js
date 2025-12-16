@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    /* -------------------------------------------
+/* -------------------------------------------
    DETAIL-GALLERY (venstre side): klik for at skifte stort billede/video
 -------------------------------------------- */
 const galleryItems = document.querySelectorAll(".detail-gallery .gallery-item");
